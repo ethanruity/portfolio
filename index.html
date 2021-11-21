@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan's Portfolio</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Estonia&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="landing">
+      <nav>
+        <a href="#about"
+          ><img src="imgs/me-head.png" alt="Cartoon Head" id="head-shot"
+        /></a>
+        <div id="nav-right">
+          <a href="#about">About Me</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Resume</a>
+        </div>
+      </nav>
+      <div id="intro">
+        <h1>I'm Ethan</h1>
+        <h5>a full stack developer</h5>
+      </div>
+    </div>
+
+    <section id="about">
+      <div id="shoes">
+        Choose a shoe:
+        <div id="shoe-box">
+          <div>
+            <img src="imgs/ones.png" alt="Jordan 1s" id="ones" />
+            <div class="hidden" id="ones-drop">
+              <button class="circle" id="red"></button>
+              <button class="circle" id="purple"></button>
+              <button class="circle" id="blue"></button>
+              <button class="circle" id="green"></button>
+            </div>
+          </div>
+          <div>
+            <img src="imgs/threes.png" alt="Jordan 3s" id="threes" />
+            <div class="hidden" id="threes-drop">
+              <button class="circle" id="white"></button>
+              <button class="circle" id="black"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="center">
+        <img src="imgs/me-one.png" alt="Cartoon Me" id="me" />
+        <h3>Hi!</h3>
+        <p>
+          I am a developer who specializes in problem solving and writing clean,
+          elegant, and efficient code. When I am not 'in the lab' learning or
+          creating, I am most likely reading, losing golf balls, running, or if
+          it is cold, skiing.
+        </p>
+        <div class="line">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <h3>Look! I Know Things!</h3>
+        <h5 id="fe">Front End <i class="fas fa-angle-down"></i></h5>
+        <div id="fe-logo" class="img-container">
+          <img src="imgs/js.png" alt="JavaScript Icon" />
+          <img src="imgs/html.png" alt="HTML Icon" />
+          <img src="imgs/css.png" alt="CSS Icon" />
+          <img src="imgs/react.png" alt="React Icon" />
+        </div>
+        <h5 id="be">Back End <i class="fas fa-angle-down"></i></h5>
+        <div id="be-logo" class="img-container">
+          <img src="imgs/node.png" alt="Node Icon" />
+          <img src="imgs/express.png" alt="Express Icon" />
+        </div>
+        <h5 id="db">Database <i class="fas fa-angle-down"></i></h5>
+        <div id="db-logo" class="img-container">
+          <img src="imgs/mongodb.png" alt="Mongo Icon" />
+          <img src="imgs/mysql.png" alt="MySql Icon" />
+        </div>
+        <h5 id="ot">Other Tools <i class="fas fa-angle-down"></i></h5>
+        <div id="ot-logo" class="img-container">
+          <img src="imgs/git.png" alt="Git Icon" />
+          <img src="imgs/npm.png" alt="NPM Icon" />
+          <img src="imgs/bootstrap.png" alt="Bootstrap Icon" />
+          <img src="imgs/typescript.png" alt="TypeScript Icon" />
+          <img src="imgs/jquery.png" alt="JQuery Icon" />
+        </div>
+      </div>
+      <div id="sidebar"></div>
+    </section>
+
+    <section id="portfolio">
+      <div class="line">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <h3>Look! I Can Do Things!</h3>
+      <div class="project" id="item-one">
+        <h4>Connect Four</h4>
+        <img
+          src="imgs/connect-four.png"
+          alt="Website preview"
+          class="web-preview"
+        />
+        <p>HTML/CSS/JavaScript</p>
+        <a href="#"><button class="btn btn-dark">Visit</button></a>
+        <a href="#"><button class="btn btn-dark">View Code</button></a>
+      </div>
+      <div class="project" id="item-two">
+        <h4>Arithmatic Functions Challenge</h4>
+        <img
+          src="imgs/arithmatic-functions.png"
+          alt="Website preview"
+          class="web-preview"
+        />
+        <p>HTML/CSS/JavaScript</p>
+        <a href="#"><button class="btn btn-light">Visit</button></a>
+        <a
+          href="https://github.com/KenzieAcademy-Students/challenge-arithmetic-functions-ethanruity"
+          target="_blank"
+          ><button class="btn btn-light">View Code</button></a
+        >
+      </div>
+      <div class="project" id="item-three">
+        <h4>Multiplication Table</h4>
+        <img
+          src="imgs/multiplication-table.png"
+          alt="Webite preview"
+          class="web-preview"
+        />
+        <p>HTML/CSS/JavaScript</p>
+        <a href="#"><button class="btn btn-dark">Visit</button></a>
+        <a
+          href="https://github.com/KenzieAcademy-Students/challenge-multiplication-table-ethanruity"
+          target="_blank"
+          ><button class="btn btn-dark">View Code</button></a
+        >
+      </div>
+    </section>
+
+    <footer id="contact">
+      <p>
+        <a href="#about">About Me</a> | <a href="#portfolio">Projects</a> |
+        <a href="#">Resume</a>
+      </p>
+      <h3>
+        Email me at
+        <span>eruity1@gmail.com</span>
+      </h3>
+      <h3>
+        <a href="https://github.com/ethanruity" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ethan-ruitenberg-b5807a1a2/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </h3>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

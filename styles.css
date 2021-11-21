@@ -1,0 +1,286 @@
+:root {
+  --dark-blue: #0e3147;
+  --light-blue: #add0ec;
+  --third-blue: #487698;
+  --grey-blue: #d9e5f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+  color: var(--dark-blue);
+  scroll-behavior: smooth;
+}
+
+#landing {
+  background: url(imgs/better-back.jpg) no-repeat center center/cover;
+  height: 103vh;
+  width: 100%;
+}
+
+#intro {
+  height: 103vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro h1 {
+  font-family: "Estonia", cursive;
+  font-size: 130px;
+}
+
+#intro h5 {
+  margin-top: 8rem;
+  font-size: 20px;
+}
+
+#landing nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#head-shot {
+  width: 8rem;
+  margin-top: -2rem;
+  margin-left: 5%;
+  border: 0px solid white;
+  border-radius: 50%;
+}
+
+#nav-right {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#nav-right a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#about {
+  box-shadow: 0px -10px 5px 10px rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+#about div {
+  flex: 1;
+}
+
+#shoes {
+  max-width: 20%;
+}
+
+#sidebar {
+  max-width: 20%;
+}
+
+#shoes img {
+  width: 15vw;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+#red {
+  background: rgb(170, 11, 11);
+}
+
+#purple {
+  background: rgb(100, 2, 100);
+}
+
+#blue {
+  background: rgb(5, 5, 160);
+}
+
+#green {
+  background: rgb(6, 97, 6);
+}
+
+#white {
+  background: white;
+  border: 2px solid black;
+}
+
+#black {
+  background: black;
+}
+
+.hidden {
+  display: none;
+}
+
+#about #center img {
+  margin-top: -30px;
+}
+
+#about h3,
+#portfolio h3 {
+  font-family: "Estonia", cursive;
+  font-size: 75px;
+}
+
+#about p {
+  margin: auto;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+#about h5 {
+  font-size: 20px;
+  color: var(--third-blue);
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+#about .img-container {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#about .img-container img {
+  width: 100px;
+  padding: 0 5px;
+  padding-top: 1rem;
+}
+
+#portfolio {
+  text-align: center;
+}
+
+#portfolio img {
+  border: 5px solid rgb(226, 225, 225);
+  width: 33%;
+}
+
+#portfolio h4 {
+  padding: 1rem 0;
+  font-size: 30px;
+}
+
+#item-one {
+  background: var(--light-blue);
+}
+
+#item-two h4,
+#item-two p {
+  color: var(--grey-blue);
+}
+
+#item-two {
+  background: var(--dark-blue);
+}
+
+#item-three {
+  background: var(--grey-blue);
+}
+
+footer {
+  color: var(--dark-blue);
+  text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer i {
+  font-size: 40px;
+  margin: auto 1rem;
+}
+
+footer span {
+  color: #e09e3b;
+}
+
+.line {
+  padding: 5vh 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background: var(--light-blue);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.btn {
+  margin: 1rem;
+  width: 120px;
+  height: 55px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: #fff;
+  background: var(--dark-blue);
+  border-color: var(--light-blue);
+}
+
+.btn-light {
+  color: var(--dark-blue);
+  background: var(--grey-blue);
+}
+
+@media (max-width: 768px) {
+  nav,
+  #nav-right,
+  #about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #shoes {
+    margin: auto;
+  }
+
+  #shoes img {
+    width: 35vw;
+  }
+
+  #shoe-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #center img {
+    width: 100vw;
+  }
+
+  #center p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #portfolio img {
+    width: 70vw;
+  }
+}
