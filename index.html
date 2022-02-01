@@ -25,10 +25,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Landing page -->
     <div id="landing">
+      <!-- Nav bar -->
       <nav>
         <a href="#about"
-          ><img src="imgs/me-head.png" alt="Cartoon Head" id="head-shot"
+          ><img src="imgs/me/me-head.png" alt="Cartoon Head" id="head-shot"
         /></a>
         <div id="nav-right">
           <a href="#about">About Me</a>
@@ -43,12 +45,14 @@
       </div>
     </div>
 
-    <section id="about">
+    <!-- About me section -->
+    <section class="section" id="about">
+      <!-- Shoe selector -->
       <div id="shoes">
         Choose a shoe:
         <div id="shoe-box">
           <div>
-            <img src="imgs/ones.png" alt="Jordan 1s" id="ones" />
+            <img src="imgs/me/ones.png" alt="Jordan 1s" id="ones" />
             <div class="hidden" id="ones-drop">
               <button class="circle" id="red"></button>
               <button class="circle" id="purple"></button>
@@ -57,7 +61,7 @@
             </div>
           </div>
           <div>
-            <img src="imgs/threes.png" alt="Jordan 3s" id="threes" />
+            <img src="imgs/me/threes.png" alt="Jordan 3s" id="threes" />
             <div class="hidden" id="threes-drop">
               <button class="circle" id="white"></button>
               <button class="circle" id="black"></button>
@@ -65,14 +69,15 @@
           </div>
         </div>
       </div>
+      <!-- About me pic and blurb -->
       <div id="center">
-        <img src="imgs/me-one.png" alt="Cartoon Me" id="me" />
+        <img src="imgs/me/me-one.png" alt="Cartoon Me" id="me" />
         <h3>Hi!</h3>
         <p>
           I am a developer who specializes in problem solving and writing clean,
-          elegant, and efficient code. When I am not 'in the lab' learning or
-          creating, I am most likely reading, losing golf balls, running, or if
-          it is cold, skiing.
+          elegant, and efficient code. When I am not staring at a computer, I am
+          most likely reading, losing golf balls, running, or if it is cold,
+          skiing.
         </p>
         <div class="line">
           <span class="dot"></span>
@@ -80,37 +85,46 @@
           <span class="dot"></span>
           <span class="dot"></span>
         </div>
+        <!-- Languages / libraries -->
         <h3>Look! I Know Things!</h3>
         <h5 id="fe">Front End <i class="fas fa-angle-down"></i></h5>
         <div id="fe-logo" class="img-container">
-          <img src="imgs/js.png" alt="JavaScript Icon" />
-          <img src="imgs/html.png" alt="HTML Icon" />
-          <img src="imgs/css.png" alt="CSS Icon" />
-          <img src="imgs/react.png" alt="React Icon" />
+          <img src="imgs/libraries/js.png" alt="JavaScript Icon" />
+          <img src="imgs/libraries/html.png" alt="HTML Icon" />
+          <img src="imgs/libraries/css.png" alt="CSS Icon" />
+          <img src="imgs/libraries/react.png" alt="React Icon" />
         </div>
         <h5 id="be">Back End <i class="fas fa-angle-down"></i></h5>
         <div id="be-logo" class="img-container">
-          <img src="imgs/node.png" alt="Node Icon" />
-          <img src="imgs/express.png" alt="Express Icon" />
+          <img src="imgs/libraries/node.png" alt="Node Icon" />
+          <img src="imgs/libraries/express.png" alt="Express Icon" />
         </div>
         <h5 id="db">Database <i class="fas fa-angle-down"></i></h5>
         <div id="db-logo" class="img-container">
-          <img src="imgs/mongodb.png" alt="Mongo Icon" />
-          <img src="imgs/mysql.png" alt="MySql Icon" />
+          <img src="imgs/libraries/mongodb.png" alt="Mongo Icon" />
+          <img src="imgs/libraries/mysql.png" alt="MySql Icon" />
         </div>
         <h5 id="ot">Other Tools <i class="fas fa-angle-down"></i></h5>
         <div id="ot-logo" class="img-container">
-          <img src="imgs/git.png" alt="Git Icon" />
-          <img src="imgs/npm.png" alt="NPM Icon" />
-          <img src="imgs/bootstrap.png" alt="Bootstrap Icon" />
-          <img src="imgs/typescript.png" alt="TypeScript Icon" />
-          <img src="imgs/jquery.png" alt="JQuery Icon" />
+          <img src="imgs/libraries/git.png" alt="Git Icon" />
+          <img src="imgs/libraries/npm.png" alt="NPM Icon" />
+          <img src="imgs/libraries/bootstrap.png" alt="Bootstrap Icon" />
+          <img src="imgs/libraries/typescript.png" alt="TypeScript Icon" />
+          <img src="imgs/libraries/jquery.png" alt="JQuery Icon" />
+          <img src="imgs/libraries/p5js.png" alt="P5 Icon" />
         </div>
       </div>
-      <div id="sidebar"></div>
+      <!-- Snake game -->
+      <iframe
+        src="https://editor.p5js.org/eruity/full/X3wEcM866"
+        width="300"
+        height="600"
+        class="snake"
+      ></iframe>
     </section>
 
-    <section id="portfolio">
+    <!-- Projects -->
+    <section class="section" id="portfolio">
       <div class="line">
         <span class="dot"></span>
         <span class="dot"></span>
@@ -119,20 +133,37 @@
       </div>
       <h3>Look! I Can Do Things!</h3>
       <div class="project" id="item-one">
-        <h4>Connect Four</h4>
+        <h4>Hidden Gems</h4>
         <img
-          src="imgs/connect-four.png"
-          alt="Website preview"
+          src="imgs/projects/hidden-gem-1.png"
+          alt="Hidden Gem preview"
           class="web-preview"
+          id="hidden-gem-pic"
         />
-        <p>HTML/CSS/JavaScript</p>
-        <a href="#"><button class="btn btn-dark">Visit</button></a>
-        <a href="#"><button class="btn btn-dark">View Code</button></a>
+        <p class="langs">React/NodeJS/MongoDB/Express</p>
+        <p class="description">
+          Developed a website that works with the mapbox api to allow users to
+          share their favorite restaurants, hikes, or activies by placing
+          markers(gems) on the map. While other users can come along and
+          interact with gems in thier area by voting and saving gems to their
+          profile to visit later.
+        </p>
+        <div class="btn-container">
+          <a href="https://hidden-gem.vercel.app/" target="_blank"
+            ><button class="btn btn-dark">Visit</button></a
+          >
+          <a href="https://github.com/Kriviears/Hidden-gem" target="_blank"
+            ><button class="btn btn-dark">Front-end Code</button></a
+          >
+          <a href="https://github.com/Kriviears/hidden-gem-api" target="_blank"
+            ><button class="btn btn-dark">Back-end Code</button></a
+          >
+        </div>
       </div>
       <div class="project" id="item-two">
-        <h4>Arithmatic Functions Challenge</h4>
+        <h4>Arithmatic Functions</h4>
         <img
-          src="imgs/arithmatic-functions.png"
+          src="imgs/projects/arithmatic-functions.png"
           alt="Website preview"
           class="web-preview"
         />
@@ -145,9 +176,9 @@
         >
       </div>
       <div class="project" id="item-three">
-        <h4>Multiplication Table</h4>
+        <!-- <h4>Multiplication Table</h4>
         <img
-          src="imgs/multiplication-table.png"
+          src="imgs/projects/multiplication-table.png"
           alt="Webite preview"
           class="web-preview"
         />
@@ -157,11 +188,21 @@
           href="https://github.com/KenzieAcademy-Students/challenge-multiplication-table-ethanruity"
           target="_blank"
           ><button class="btn btn-dark">View Code</button></a
-        >
+        > -->
+        <h4>Connect Four</h4>
+        <img
+          src="imgs/projects/connect-four.png"
+          alt="Website preview"
+          class="web-preview"
+        />
+        <p>HTML/CSS/JavaScript</p>
+        <a href="#"><button class="btn btn-dark">Visit</button></a>
+        <a href="#"><button class="btn btn-dark">View Code</button></a>
       </div>
     </section>
 
-    <footer id="contact">
+    <!-- Footer and contact info -->
+    <footer class="section" id="contact">
       <p>
         <a href="#about">About Me</a> | <a href="#portfolio">Projects</a> |
         <a href="#">Resume</a>
