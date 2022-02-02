@@ -66,14 +66,17 @@ const allSections = document.querySelectorAll(".section");
 //   section.classList.add("section--hidden");
 // });
 
-const hiddenGemPics = [
-  "imgs/projects/hidden-gem-1.png",
-  "imgs/projects/hidden-gem-2.png",
-  "imgs/projects/hidden-gem-3.png",
-  "imgs/projects/hidden-gem-4.png",
-  "imgs/projects/hidden-gem-5.png",
-];
-
-const hiddenGemPicture = document.getElementById("hidden-gem-pic");
-
-const nextPicture = (arr) => {};
+//Gem image slides
+const gemSlider = new Swiper(".gemSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".gem-right",
+    prevEl: ".gem-left",
+  },
+});

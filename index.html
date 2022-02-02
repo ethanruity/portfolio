@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan's Portfolio</title>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +16,10 @@
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -75,9 +74,8 @@
         <h3>Hi!</h3>
         <p>
           I am a developer who specializes in problem solving and writing clean,
-          elegant, and efficient code. When I am not staring at a computer, I am
-          most likely reading, losing golf balls, running, or if it is cold,
-          skiing.
+          elegant, and efficient code. When I am way from my computer, I am most
+          likely reading, losing golf balls, running, or if it is cold, skiing.
         </p>
         <div class="line">
           <span class="dot"></span>
@@ -115,12 +113,13 @@
         </div>
       </div>
       <!-- Snake game -->
-      <iframe
+      <div class="empty"></div>
+      <!-- <iframe
         src="https://editor.p5js.org/eruity/full/X3wEcM866"
         width="300"
         height="600"
         class="snake"
-      ></iframe>
+      ></iframe> -->
     </section>
 
     <!-- Projects -->
@@ -134,13 +133,56 @@
       <h3>Look! I Can Do Things!</h3>
       <div class="project" id="item-one">
         <h4>Hidden Gems</h4>
-        <img
-          src="imgs/projects/hidden-gem-1.png"
-          alt="Hidden Gem preview"
-          class="web-preview"
-          id="hidden-gem-pic"
-        />
-        <p class="langs">React/NodeJS/MongoDB/Express</p>
+        <div class="swiper gemSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/hidden-gem-1.png"
+                alt="Hidden Gem preview"
+                class="web-preview"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/hidden-gem-2.png"
+                alt="Hidden Gem preview"
+                class="web-preview"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/hidden-gem-3.png"
+                alt="Hidden Gem preview"
+                class="web-preview"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/hidden-gem-4.png"
+                alt="Hidden Gem preview"
+                class="web-preview"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/hidden-gem-5.png"
+                alt="Hidden Gem preview"
+                class="web-preview"
+              />
+            </div>
+          </div>
+          <div class="controls">
+            <div class="swiper-pagination"></div>
+            <button class="scroll left btn-dark gem-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll right btn-dark gem-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <p class="langs">React/CSS/NodeJS/MongoDB/Express</p>
         <p class="description">
           Developed a website that works with the mapbox api to allow users to
           share their favorite restaurants, hikes, or activies by placing
@@ -161,7 +203,7 @@
         </div>
       </div>
       <div class="project" id="item-two">
-        <h4>Arithmatic Functions</h4>
+        <h4>Google Clone</h4>
         <img
           src="imgs/projects/arithmatic-functions.png"
           alt="Website preview"
@@ -222,6 +264,12 @@
         ></a>
       </h3>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
