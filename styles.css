@@ -249,6 +249,7 @@ footer i {
 
 footer span {
   color: #e09e3b;
+  cursor: pointer;
 }
 
 .line {
@@ -320,7 +321,7 @@ footer span {
   transform: translateY(8rem);
 }
 
-/* Scrolling thorugg images */
+/* Scrolling through images */
 .scroll {
   outline: none;
   border: none;
@@ -330,10 +331,16 @@ footer span {
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  z-index: 10;
 }
 
-.scroll i {
-  color: #fff;
+.btn-dark i {
+  color: var(--grey-blue);
+  font-size: 1.7rem;
+}
+
+.btn-light i {
+  color: var(--dark-blue);
   font-size: 1.7rem;
 }
 
@@ -368,6 +375,51 @@ footer span {
   justify-content: space-around;
 }
 
+.swiper-pagination-bullet {
+  background-color: #e09e3b;
+}
+
+/* Modal Styling */
+/* .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  left: 0;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: all 1s;
+}
+
+.close:hover {
+  transform: rotate(180deg);
+}
+
+.close:focus {
+  outline: none;
+} */
+
 /* Phone */
 @media (max-width: 768px) {
   nav,
@@ -398,6 +450,10 @@ footer span {
   #center p {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  .space {
+    margin-bottom: 15px;
   }
 
   #portfolio img,

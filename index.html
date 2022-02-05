@@ -38,6 +38,13 @@
           <a href="#">Resume</a>
         </div>
       </nav>
+      <!--  Modal -->
+      <!-- <div id="email-modal" class="modal">
+        <div class="content">
+         // Resume
+        </div>
+      </div> -->
+
       <div id="intro">
         <h1>I'm Ethan</h1>
         <h5>a full stack developer</h5>
@@ -90,7 +97,7 @@
           <img src="imgs/libraries/js.png" alt="JavaScript Icon" />
           <img src="imgs/libraries/html.png" alt="HTML Icon" />
           <img src="imgs/libraries/css.png" alt="CSS Icon" />
-          <img src="imgs/libraries/react.png" alt="React Icon" />
+          <img src="imgs/libraries/react.png" alt="React Icon" class="space" />
         </div>
         <h5 id="be">Back End <i class="fas fa-angle-down"></i></h5>
         <div id="be-logo" class="img-container">
@@ -104,22 +111,19 @@
         </div>
         <h5 id="ot">Other Tools <i class="fas fa-angle-down"></i></h5>
         <div id="ot-logo" class="img-container">
-          <img src="imgs/libraries/git.png" alt="Git Icon" />
-          <img src="imgs/libraries/npm.png" alt="NPM Icon" />
-          <img src="imgs/libraries/bootstrap.png" alt="Bootstrap Icon" />
+          <img src="imgs/libraries/git.png" alt="Git Icon" class="space" />
+          <img src="imgs/libraries/npm.png" alt="NPM Icon" class="space" />
+          <img
+            src="imgs/libraries/bootstrap.png"
+            alt="Bootstrap Icon"
+            class="space"
+          />
           <img src="imgs/libraries/typescript.png" alt="TypeScript Icon" />
           <img src="imgs/libraries/jquery.png" alt="JQuery Icon" />
           <img src="imgs/libraries/p5js.png" alt="P5 Icon" />
         </div>
       </div>
-      <!-- Snake game -->
       <div class="empty"></div>
-      <!-- <iframe
-        src="https://editor.p5js.org/eruity/full/X3wEcM866"
-        width="300"
-        height="600"
-        class="snake"
-      ></iframe> -->
     </section>
 
     <!-- Projects -->
@@ -202,44 +206,92 @@
           >
         </div>
       </div>
+
       <div class="project" id="item-two">
         <h4>Google Clone</h4>
-        <img
-          src="imgs/projects/arithmatic-functions.png"
-          alt="Website preview"
-          class="web-preview"
-        />
-        <p>HTML/CSS/JavaScript</p>
-        <a href="#"><button class="btn btn-light">Visit</button></a>
-        <a
-          href="https://github.com/KenzieAcademy-Students/challenge-arithmetic-functions-ethanruity"
-          target="_blank"
+
+        <div class="swiper googleSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/google-clone-1.png"
+                alt="Google Clone preview"
+                class="web-preview"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/google-clone-2.png"
+                alt="Google Clone preview"
+                class="web-preview"
+              />
+            </div>
+          </div>
+          <div class="controls">
+            <div class="swiper-pagination"></div>
+            <button class="scroll left btn-light google-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll right btn-light google-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <p class="langs">React/CSS</p>
+        <p class="description">
+          Created a simple UI clone of Google with React and CSS, while using
+          the Google search API to get search results.
+        </p>
+        <a href="https://google-clone-ethanruity.vercel.app/" target="_blank"
+          ><button class="btn btn-light">Visit</button></a
+        >
+        <a href="https://github.com/ethanruity/google-clone" target="_blank"
           ><button class="btn btn-light">View Code</button></a
         >
       </div>
       <div class="project" id="item-three">
-        <!-- <h4>Multiplication Table</h4>
-        <img
-          src="imgs/projects/multiplication-table.png"
-          alt="Webite preview"
-          class="web-preview"
-        />
-        <p>HTML/CSS/JavaScript</p>
-        <a href="#"><button class="btn btn-dark">Visit</button></a>
-        <a
-          href="https://github.com/KenzieAcademy-Students/challenge-multiplication-table-ethanruity"
-          target="_blank"
+        <h4>Sanke Game</h4>
+        <div class="swiper snakeSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/snake-1.png"
+                alt="Snake preview"
+                class="web-preview"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/projects/snake-2.png"
+                alt="Snake preview"
+                class="web-preview"
+              />
+            </div>
+          </div>
+          <div class="controls">
+            <div class="swiper-pagination"></div>
+            <button class="scroll left btn-dark snake-left">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="scroll right btn-dark snake-right">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <p class="langs">P5.js/Javascript</p>
+        <p class="description">
+          Created a fun snake game with P5.js and functional programming to
+          create a snake and check if the snake is hitting a border, itself or a
+          piece of food. This game also utilizes local storage, where it will
+          store your high score so you can come back and try to beat it!
+        </p>
+        <a href="https://codepen.io/eruity/full/LYOZoJq" target="_blank"
+          ><button class="btn btn-dark">Visit</button></a
+        >
+        <a href="https://codepen.io/eruity/pen/LYOZoJq" target="_blank"
           ><button class="btn btn-dark">View Code</button></a
-        > -->
-        <h4>Connect Four</h4>
-        <img
-          src="imgs/projects/connect-four.png"
-          alt="Website preview"
-          class="web-preview"
-        />
-        <p>HTML/CSS/JavaScript</p>
-        <a href="#"><button class="btn btn-dark">Visit</button></a>
-        <a href="#"><button class="btn btn-dark">View Code</button></a>
+        >
       </div>
     </section>
 
@@ -247,12 +299,8 @@
     <footer class="section" id="contact">
       <p>
         <a href="#about">About Me</a> | <a href="#portfolio">Projects</a> |
-        <a href="#">Resume</a>
+        <a href="#">Resume</a> | <a href="mailto:eruity1@gmail.com">Email</a>
       </p>
-      <h3>
-        Email me at
-        <span>eruity1@gmail.com</span>
-      </h3>
       <h3>
         <a href="https://github.com/ethanruity" target="_blank"
           ><i class="fab fa-github"></i
