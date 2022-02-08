@@ -112,20 +112,22 @@ const snakeSlider = new Swiper(".snakeSwiper", {
 });
 
 //Email modal
-// const emailModal = document.getElementById("email-modal");
-// const emailHandler = document.getElementById("email");
-// const emailClose = document.getElementById("close-email");
+const resumeModal = document.getElementById("resume-modal");
+const resumeHandler = document.querySelectorAll(".resume");
+//const emailClose = document.getElementById("close-email");
 
-// emailHandler.addEventListener("click", function () {
-//   emailModal.style.display = "block";
-// });
+resumeHandler.forEach((el) => {
+  el.addEventListener("click", function () {
+    resumeModal.style.display = "block";
+  });
+});
 
 // emailClose.addEventListener("click", function () {
 //   emailModal.style.display = "none";
 // });
 
-// window.onclick = function (event) {
-//   if (event.target == emailModal) {
-//     emailModal.style.display = "none";
-//   }
-// };
+window.onclick = function (event) {
+  if (event.target == resumeModal) {
+    resumeModal.style.display = "none";
+  }
+};

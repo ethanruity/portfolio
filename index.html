@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan's Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="imgs/me/me-head.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,15 +36,18 @@
           <a href="#about">About Me</a>
           <a href="#portfolio">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="#">Resume</a>
+          <a class="resume" href="#">Resume</a>
         </div>
       </nav>
       <!--  Modal -->
-      <!-- <div id="email-modal" class="modal">
+      <div id="resume-modal" class="modal">
         <div class="content">
-         // Resume
+          <iframe
+            class="preview"
+            src="https://docs.google.com/document/d/e/2PACX-1vSbSsKXAgZskX_TE-z1miTmQDMJwn1Af0TFHL3pKSwghZEheDZNOhep4GLt6Ei1T86LNfUmt3PrmJxR/pub?embedded=true"
+          ></iframe>
         </div>
-      </div> -->
+      </div>
 
       <div id="intro">
         <h1>I'm Ethan</h1>
@@ -299,7 +303,8 @@
     <footer class="section" id="contact">
       <p>
         <a href="#about">About Me</a> | <a href="#portfolio">Projects</a> |
-        <a href="#">Resume</a> | <a href="mailto:eruity1@gmail.com">Email</a>
+        <a class="resume">Resume</a> |
+        <a href="mailto:eruity1@gmail.com">Email</a>
       </p>
       <h3>
         <a href="https://github.com/ethanruity" target="_blank"
