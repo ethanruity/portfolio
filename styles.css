@@ -407,6 +407,7 @@ footer span {
   border: 1px solid #888;
   width: 55%;
   height: 90%;
+  overflow: hidden;
 }
 
 .preview {
@@ -458,6 +459,7 @@ footer span {
   #shoe-box {
     display: flex;
     justify-content: space-evenly;
+    z-index: 3;
   }
 
   #center img {

@@ -111,10 +111,10 @@ const snakeSlider = new Swiper(".snakeSwiper", {
   },
 });
 
-//Email modal
+//Resume modal
 const resumeModal = document.getElementById("resume-modal");
 const resumeHandler = document.querySelectorAll(".resume");
-//const emailClose = document.getElementById("close-email");
+const resumeClose = document.getElementById("resume-close");
 
 resumeHandler.forEach((el) => {
   el.addEventListener("click", function () {
@@ -122,9 +122,9 @@ resumeHandler.forEach((el) => {
   });
 });
 
-// emailClose.addEventListener("click", function () {
-//   emailModal.style.display = "none";
-// });
+resumeClose.addEventListener("click", function () {
+  resumeModal.style.display = "none";
+});
 
 window.onclick = function (event) {
   if (event.target == resumeModal) {
