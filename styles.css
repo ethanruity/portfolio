@@ -443,6 +443,10 @@ footer span {
     text-align: center;
   }
 
+  #intro {
+    margin-top: -80px;
+  }
+
   #shoes {
     margin: auto;
   }
