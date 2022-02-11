@@ -480,6 +480,10 @@ footer span {
     width: 70vw;
   }
 
+  .small {
+    font-size: 18px;
+  }
+
   .description {
     width: 75vw;
   }
